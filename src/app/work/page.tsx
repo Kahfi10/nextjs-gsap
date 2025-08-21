@@ -1,7 +1,13 @@
+"use client";
+import { useRevealer } from "@/hooks/useRevealer";
+
+
 const Work = () => {
+  useRevealer();
   return (
     <>
-        <div className="work">
+    <div className="revealer"></div>
+      <div className="work">
         <h1>My Draw</h1>
         
 
