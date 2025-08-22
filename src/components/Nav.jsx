@@ -48,10 +48,10 @@ const Nav = () => {
         <div className="col">
             <div className="nav-items"> 
                 <div className="nav-item">
-                    <Link href="/work" onClick={handleNavigation("/work")}>Work</Link>
+                    <Link href="/work" onClick={handleNavigation("/work")}>God did.</Link>
                 </div>
                 <div className="nav-item">
-                    <Link href="/about" onClick={handleNavigation("/about")}>About</Link>
+                    <Link href="/about" onClick={handleNavigation("/about")}>God plan.</Link>
                 </div>
             </div>
             <div className="nav-copy">

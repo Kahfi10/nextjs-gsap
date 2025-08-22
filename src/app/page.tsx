@@ -7,11 +7,11 @@ export default function Home() {
     <div className="revealer"></div>
     <div className="home">
       <div className="header">
-        <h1>Kahfi</h1>
+        <h1>Godhand.</h1>
       </div>
 
         <div className="hero-img">
-          <img src="/header.jpg" alt="" />
+          <img src="/header.jpeg" alt="" />
         </div>
 
     </div>

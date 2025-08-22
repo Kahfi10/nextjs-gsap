@@ -1,3 +1,23 @@
+
+.work .projects .col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  gap: 1em;
+}
+.work .projects .col img {
+  max-width: 300px;
+  height: auto;
+  margin-right: 2em;
+}
+.work .projects .col p {
+  flex: 1;
+  font-size: 1.2em;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+}
 :root {
   --bg: #fff;
   --fg: #0a0a0a;
@@ -25,6 +45,7 @@ h1 {
   font-weight: 600;
   letter-spacing: -0.1rem;
   line-height: 1;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -79,7 +100,8 @@ a, p {
 }
 
 .home .header h1 {
-  font-size: 30.5vw;
+  font-size: 22vw;
+  padding-top: 10vh;
   text-align: center;
 }
 
@@ -89,25 +111,26 @@ a, p {
   bottom: 0%;
   transform: translateX(-50%);
   width: 95%;
-  height: 50vh;
+  height: 55vh;
   overflow: hidden;
 }
 
 .work {
-  text-align: center;
-  padding: 15em 1em;
+  padding: 10em;
   display: flex;
-  flex-direction: column;
-  gap: 2em;
+  gap: 1em;
   background-color: var(--bg);
+  width: 100%;
 }
 
 .work .projects {
-  width: 32%;
+  width: 80%;
+  padding-top: 1.5em;
+  text-align: center;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 4em;
+  gap: 3em;
 }
 
 .work .projects img {
@@ -115,7 +138,7 @@ a, p {
 }
 
 .about {
-  padding: 15em 1em;
+  padding: 10em 1em;
   display: flex;
   gap: 1em;
   background-color: var(--bg);
@@ -134,6 +157,10 @@ a, p {
 
 .about .about-img {
   aspect-ratio: 5/7;
+}
+
+.about .col h2 {
+  font-size: 3rem;
 }
 
 .letter, .word, .line {
