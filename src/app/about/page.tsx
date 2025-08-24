@@ -32,19 +32,15 @@ const About = () => {
           <h2>"Too weird to live,Too rare to die"</h2>
           <div className="col">
             <p>Nude - Radiohead</p>
-            <img src="/about.jpeg" alt="" />
+            <img src="/song1.jpg" alt="" />
           </div>
           <div className="col">
-            <p>Nude - Radiohead</p>
-            <img src="/about.jpeg" alt="" />
+            <p>SUMMER - BROCKHAMPTON</p>
+            <img src="/song2.jpg" alt="" />
           </div>
           <div className="col">
-            <p>Nude - Radiohead</p>
-            <img src="/about.jpeg" alt="" />
-          </div>
-          <div className="col">
-            <p>Nude - Radiohead</p>
-            <img src="/about.jpeg" alt="" />
+            <p>WASTE - BROCKHAMPTON</p>
+            <img src="/song3.jpg" alt="" />
           </div>
         </div>
       </div>
