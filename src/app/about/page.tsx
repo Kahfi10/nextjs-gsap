@@ -8,7 +8,7 @@ const About = () => {
     <div className="revealer"></div>
       <div className="about">
         <div className="col">
-            <h2>God did.</h2>
+            <h2>God plan.</h2>
         </div>
         <div className="col">
             <h2>I'm a developer and I have interest in art.</h2>
@@ -18,8 +18,34 @@ const About = () => {
               Whether it's building dynamic user interfaces or experimenting with animation libraries, I strive to deliver solutions that are both efficient and aesthetically pleasing.
             </h2>
             <div className="about-img">
-                <img src="/about.jpg" alt="" />
+                <img src="/about.jpeg" alt="" />
             </div>
+        </div>
+      </div>
+
+      <div className="song">
+        <div className="col">
+          <h2>Song.</h2>
+        </div>
+
+        <div className="title">
+          <h2>"Too weird to live,Too rare to die"</h2>
+          <div className="col">
+            <p>Nude - Radiohead</p>
+            <img src="/about.jpeg" alt="" />
+          </div>
+          <div className="col">
+            <p>Nude - Radiohead</p>
+            <img src="/about.jpeg" alt="" />
+          </div>
+          <div className="col">
+            <p>Nude - Radiohead</p>
+            <img src="/about.jpeg" alt="" />
+          </div>
+          <div className="col">
+            <p>Nude - Radiohead</p>
+            <img src="/about.jpeg" alt="" />
+          </div>
         </div>
       </div>
     </>

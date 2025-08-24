@@ -18,6 +18,37 @@
   min-width: 0;
   width: 100%;
 }
+
+.song .title .col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
+}
+
+.song .title .col img {
+  max-width: 250px;
+  height: auto;
+  margin-right: 1em;
+  object-fit: cover;
+}
+
+.song .title .col p {
+  flex: 1;
+  font-size: 1.5em;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+}
+
+.song .title h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 2em;
+}
+
 :root {
   --bg: #fff;
   --fg: #0a0a0a;
@@ -133,8 +164,27 @@ a, p {
   gap: 3em;
 }
 
+.song {
+  padding: 3em;
+  display: flex;
+  gap: 1em;
+  background-color: var(--bg);
+  width: 100%;
+}
+
+.song .title {
+  width: 80%;
+  padding-top: 1em;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
 .work .projects img {
   aspect-ratio: 4/5;
+  object-fit: cover;
 }
 
 .about {
@@ -156,11 +206,11 @@ a, p {
 }
 
 .about .about-img {
-  aspect-ratio: 5/7;
+  aspect-ratio: 4/5;
 }
 
 .about .col h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .letter, .word, .line {
@@ -181,5 +231,29 @@ a, p {
   z-index: 2;
 }
 
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none !important;
+}
+
+::view-transition-group(root) {
+  z-index: auto !important;
+}
+
+::view-transition-image-pair(root) {
+  isolation: isolate;
+  will-change: clip-path;
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 10000;
+  animation: none !important;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+  animation: none !important;
+}
 
 
