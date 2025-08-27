@@ -42,26 +42,38 @@ export default function Home() {
 
   useEffect(() => {
     if (audioRef.current) {
+      audioRef.current.muted = true;
       audioRef.current.volume = 0;
-      fadeAudio("in");
+      audioRef.current.play();
     }
 
+    const handleUserInteract = () => {
+      if (audioRef.current) {
+        audioRef.current.muted = false;
+        fadeAudio("in");
+        window.removeEventListener("click", handleUserInteract);
+      }
+    };
+
+    window.addEventListener("click", handleUserInteract);
+
     const handleBeforeUnload = () => {
-      fadeAudio("out", 1000); // Fade out 1 detik sebelum unload
+      fadeAudio("out", 1000);
     };
 
     window.addEventListener("beforeunload", handleBeforeUnload);
 
     return () => {
       window.removeEventListener("beforeunload", handleBeforeUnload);
-      fadeAudio("out", 1000); // Fade out juga saat komponen unmount
+      window.removeEventListener("click", handleUserInteract);
+      fadeAudio("out", 1000);
     };
   }, []);
 
   return (
     <>
       <div className="revealer"></div>
-      <audio ref={audioRef} src="/summer.wav" autoPlay loop />
+      <audio ref={audioRef} src="/summer.wav" autoPlay muted loop />
       <div className="home">
         <div className="header">
           <h1>Godhand.</h1>
